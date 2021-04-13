@@ -1,0 +1,62 @@
+/* CLASES QUE CAMBIAN SEGUN VALOR */
+
+.color_valor_letra {
+  color: #d264a1;
+}
+
+.color_valor_fondo {
+  background-color: #d264a1;
+}
+
+.color_valor_borde {
+  border-color: #d264a1;
+}
+
+.boton_sidenav_valor:hover {
+  border-color: #d264a1;
+  color: #d264a1;
+}
+
+.paginador_activo {
+  background-color: #d264a1;
+}
+
+.main-bg {
+  background: #d264a1;
+}
+
+.button.light {
+  color: #d264a1;
+}
+
+.button.light:hover {
+  background-color: #d264a1;
+}
+
+.sidenav .closebtn:hover {
+  border-color: #d264a1;
+  color: #fff;
+  background-color: #d264a1;
+}
+
+.titulo_semana {
+  color: #d264a1;
+}
+
+.valor_semana {
+  background-color: #d264a1;
+}
+
+.p_ruta_solidaridad {
+  color: #d264a1;
+}
+
+.linea_semana {
+  border-color: #d264a1;
+}
+
+.fecha_semana {
+  color: #d264a1;
+}
+/* FIN CLASES QUE CAMBIAN SEGUN VALOR */
+

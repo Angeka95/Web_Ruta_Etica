@@ -1,0 +1,1704 @@
+/*loader*/
+
+#ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000;
+}
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#ftco-loader.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}
+
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}
+
+
+/*end loader*/
+
+#letrasdfa2 {
+  color: #fff;
+  font-family: 'Ancizar sans';
+  font-style: normal;
+  padding: 10px 5% 10px 0px;
+  text-align: right;
+  background: #94b43b;
+}
+
+.tx-unal-accesibilidad {
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+main.detalle {
+  margin: 0 0 0 0;
+  z-index: 0;
+}
+
+
+/*Encabezados*/
+
+p {
+  font-family: Ancizar Sans;
+}
+
+h4 {
+  font-family: Ancizar Sans;
+}
+
+h3 {
+  font-family: Ancizar Sans;
+}
+
+h2 {
+  font-family: Ancizar Sans;
+}
+
+h1 {
+  font-family: Ancizar Sans;
+}
+
+
+/*Compromiso ético*/
+
+
+/*Sidenav*/
+
+
+/* The side navigation menu */
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  top: 0px;
+  /* Stay at the top */
+  left: 0;
+  background-color: #fff;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 40px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  border: 0.5px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.sidenav_abierto {
+  width: 500px;
+}
+
+.sidenav_cerrado {
+  width: 0px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 5px 34px 8px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+  color: #fff;
+  padding: 18px 25px;
+  margin-bottom: 18px;
+}
+
+.boton_sidenav {
+  color: #fff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.boton_sidenav:hover {
+  background-color: #fff;
+  border-style: solid border-width: 1px
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 51px;
+  right: -19px;
+  font-size: 30px;
+  margin-right: 5px;
+  border-radius: 50px;
+  border: 0.5px solid;
+  padding: 15px 17px;
+  ;
+}
+
+.Contenedor_breadcrumb {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -53px;
+  margin-bottom: 20px
+}
+
+.Contenedor_icon_breadcrumb {
+  width: 25%;
+}
+
+.icon_breadcrumb {
+  width: 80%;
+}
+
+.icon_breadcrumb_location {
+  width: 65%;
+}
+
+.Side_breadcrumb {
+  font-size: 24px;
+  line-height: 24px;
+  width: 50%;
+  font-weight: 900;
+  font-style: italic;
+  text-align: left;
+}
+
+.linea_breadcrumb {
+  border-left: solid 2px;
+  width: 1%;
+  height: 60px;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+.Contenedor_contenido_sidenav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contenidoSidenav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.puntosPaginador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-top: -5px;
+
+}
+
+.dot {
+  font-size: 13px;
+  text-align: center;
+  line-height: 22px;
+  height: 22px;
+  width: 22px;
+  background-color: #D7D7D7;
+  border-radius: 5px;
+  display: block;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dot:hover {
+  color: black;
+  background-color: #9F9F9F; 
+}
+
+.paginador_activo:hover {
+  color: black;
+}
+
+.paginador_activo {
+  text-align: center;
+  line-height: 22px;
+  height: 22px;
+  width: 22px;
+  display: block;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contenedor_foto_sidenav {
+  display: flex;
+  justify-content: center;
+}
+
+.foto_sidenav {
+  width: 100%
+}
+
+.video_sidenav {
+  width: 100%;
+}
+
+.video_sidenav_hover a:hover {
+  display: none;
+  width: 100%;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  border: solid 1px #fff !important;
+  color: #fff !important;
+}
+
+.contenedor_foto_sidenav .video_sidenav_hover {
+  width: 100%;
+  display: none;
+}
+
+.contenedor_foto_sidenav:hover .video_sidenav_hover {
+  display: inline;
+}
+
+.contenedor_foto_sidenav:hover .video_sidenav {
+  display: none;
+}
+
+.modal .close {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #333;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+  color: #FFF;
+  font-size: 28px;
+  line-height: 45px;
+  outline: none;
+  z-index: 10;
+}
+
+.contenedor_link {
+  display: flex;
+  justify-content: center;
+}
+
+.link_destacado {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.titulo_sidenav {
+  font-size: 38px;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+  font-weight: 900;
+  font-style: italic;
+  align-self: center;
+}
+
+.subtitulo_sidenav {
+  font-size: 26px;
+  line-height: 28px;
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: 900;
+  font-style: italic;
+  align-self: center;
+}
+
+.p_destacado_sidenav {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+  text-align: justify;
+  color: #979797;
+}
+
+.descripcion_sidenav {
+  margin-top: 5%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+  color: #979797;
+}
+
+.destacado_sidenav {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  color: #1d1d1b;
+  font-weight: 900;
+}
+
+.contenedor_cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta_sidenav {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #1d1d1b;
+  font-weight: 900;
+}
+
+.linea_contenido_sidenav {
+  width: 100%;
+  width: 399px;
+  margin-top: 3px;
+  border-top: 1.5px;
+  border-style: solid;
+  border-color: grey;
+  margin-bottom: 0px;
+}
+
+.contenedor_intro{
+  width:100%;
+  display:flex;
+  justify-content: center;
+
+}
+.info_introduccion {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.modal_texto {
+  max-width: 55%;	
+}
+
+.tit_intro_text{
+  font-size: 75px;
+  font-weight: 900;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  line-height: 90px; 
+  color: #6c6c6c;
+  text-align: center;
+
+}
+
+.sub_intro_text{
+    font-size: 32px;
+    line-height: 34px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #6c6c6c;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.intro_text_pop{
+    font-size: 22px;
+    line-height: 24px;
+
+    color: #6c6c6c;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+.sub_intro_text2{
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: 20px;
+    color: #A4C956;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+
+.contenedor_icon_min{
+  display: flex;
+  align-items: center;
+
+}
+
+.contenedor_logos{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.contenedor_logos_responsive{
+  display: none;
+}
+
+
+.logo_valores{
+  width: 90%;
+}
+
+.intro_text{
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #6c6c6c;
+    text-align: left;
+    border: 1.5px solid #A4C956;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.icon_min{
+    width: 5%;
+}
+
+
+.destacado_intro{
+  font-weight: 700;
+  color: #A4C956;
+
+}
+
+.destacado_intro2{
+  font-weight: 700;
+  color: #A4C956;
+  margin-left: 5px;
+}
+
+.destacado_intro3{
+  font-weight: 700;
+  color: grey;
+  text-align: center;
+}
+
+
+.bg_blanco{
+  background-color: #fff; 
+}
+/*Fin Sidenav*/
+
+.call-to-action {
+  padding: 15px;
+  color: #fff;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.contenedor_txt_banner {
+  width: 45%;
+  padding-right: 3%;
+}
+
+.txt_banner {
+  text-align: right;
+  font-size: 22px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.txt_footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.footer-bg {
+  background-color: #acacac;
+}
+
+.contenedor_btn_banner {
+  width: 52%;
+  padding-left: 2%;
+}
+
+.btn_banner {
+  padding: 19px 59px;
+}
+
+.hvr-grow {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  font-size: 1.3em;
+}
+
+.button.light:hover,
+.button.light:visited {
+  text-decoration: none;
+}
+
+.button {
+  padding: 17px 40px;
+  border-radius: 4px;
+  font-size: 1.15em;
+  display: inline-block;
+  color: #fff;
+  text-shadow: none;
+  outline: none;
+  border: 0;
+}
+
+.pull-left {
+  float: left!important;
+}
+
+.button.light {
+  font-size: 20px;
+  border: solid 1px white;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  background-color: white;
+  font-weight: bold;
+}
+
+.button.light:hover {
+  border: solid 1px white;
+  color: white;
+}
+
+.logo_ruta_etica {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contenedor_tit_logo {
+  width: 100%;
+  height: 110px;
+}
+
+.titulo_ruta {
+  font-size: 57px;
+  letter-spacing: 20px;
+  color: grey;
+  font-family: Ancizar Sans;
+  text-align: center;
+  padding-left: 12px;
+}
+
+.linea_logo_top {
+  width: 720px;
+  margin-top: 40px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: grey;
+  margin-bottom: -20px;
+}
+
+.contenedor_p_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p_logo_ruta {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: grey;
+  padding-right: 4px;
+  padding-left: 4px;
+  line-height: 20px;
+}
+
+.linea_logo_bottom {
+  width: 720px;
+  margin-top: 20px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: grey;
+}
+
+.linea_logo_responsive {
+  display: none;
+}
+
+.semana_etica {
+  width: 30%;
+}
+
+.contenedor_semana {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 55%;
+  margin-bottom: 30%
+}
+
+.texto_semana {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.titulo_semana {
+  font-size: 36px;
+  letter-spacing: 6px;
+  font-family: Ancizar Sans, Sans;
+  text-align: center;
+  width: 100%;
+}
+
+.valor_semana {
+  font-size: 46px;
+  width: 300px;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  font-weight: 900;
+}
+
+.contenedor_linea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.linea_semana {
+  width: 130px;
+  margin-top: 36px;
+  margin-bottom: 20px;
+  border-top: 2px;
+  border-style: solid;
+}
+
+.contenedor_fecha {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fecha_semana {
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.contenedor_tip {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+
+.cuadro_tip {
+  width: 300px;
+  border-style: solid;
+  border-color: #cecece;
+  border-width: 1px;
+
+}
+
+.cuadro_zoom {
+  width: 300px;
+  margin-top: 20px;
+  display: none;
+
+}
+.contenedor_zoom{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.zoom_phone{
+  width:20%;
+}
+
+.texto_tip {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 900;
+  padding: 7% 4% 7% 4%;
+  color: #8e8e8e;
+}
+
+
+.texto_pasaporte {
+
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    padding: 6% 4% 7% 4%;
+    color: #fff;
+    margin-top: 8px;
+    background-color: grey;
+    width: 100%;
+      -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+
+}
+
+.texto_pasaporte:hover {
+    background-color: #A4C956;
+}
+
+.contenedor_text_img {
+  display: flex;
+}
+
+.contenedor_background_image {
+  width: 70%;
+}
+
+.background_image {
+  width: 100%;
+}
+
+.campus_un_image {
+  width: 100%;
+  position: relative;
+}
+
+.campus_un_image_bck {
+  width: 100%;
+  position: relative;
+}
+
+.campus_un_image a {
+  /*display: block;*/
+  position: absolute;
+}
+
+.campus_un_image_hover_dialogo,
+.campus_un_image_hover_equidad,
+.campus_un_image_hover_honestidad,
+.campus_un_image_hover_pertenencia,
+.campus_un_image_hover_respeto,
+.campus_un_image_hover_responsabilidad,
+.campus_un_image_hover_solidaridad,
+.campus_un_image_click_dialogo,
+.campus_un_image_click_equidad,
+.campus_un_image_click_honestidad,
+.campus_un_image_click_pertenencia,
+.campus_un_image_click_respeto,
+.campus_un_image_click_responsabilidad,
+.campus_un_image_click_solidaridad {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.punto_mapa {
+  width: 90%;
+}
+
+.punto_hover {
+  cursor: pointer;
+}
+
+.punto_hover .punto_mapa_hover {
+  width: 90%;
+  display: none;
+}
+
+.punto_hover:hover .punto_mapa_hover {
+  display: inline;
+}
+
+.punto_hover:hover .punto_mapa {
+  display: none;
+}
+
+.punto_solidaridad_press {
+  top: 85%;
+  left: 68%;
+  width: 8%;
+  height: 5.5%;
+  display: none;
+}
+
+.punto_solidaridad {
+  top: 84.2%;
+  left: 68%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_solidaridad_2 {
+  top: 76%;
+  left: 72%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_solidaridad_3 {
+  top: 88%;
+  left: 61%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_solidaridad_4 {
+  top: 94%;
+  left: 74%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_solidaridad_5 {
+  top: 84%;
+  left: 79%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+
+}
+
+.punto_responsabilidad {
+  top: 74.9%;
+  left: 57.5%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+
+.punto_responsabilidad_2 {
+  top: 75%;
+  left: 50%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_responsabilidad_3 {
+  top: 66%;
+  left: 59%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_responsabilidad_4 {
+  top: 86%;
+  left: 58%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_responsabilidad_5 {
+  top: 76%;
+  left: 68%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_respeto {
+  top: 65.2%;
+  left: 67%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_respeto_2 {
+  top: 62%;
+  left: 61%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_respeto_3 {
+  top: 53%;
+  left: 78%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_respeto_4 {
+  top: 63%;
+  left: 79%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_respeto_5 {
+  top: 71%;
+  left: 74%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_pertenencia {
+  top: 50%;
+  left: 67.5%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_pertenencia_2 {
+  top: 42%;
+  left: 63%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_pertenencia_3 {
+  top: 41%;
+  left: 73%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_pertenencia_4 {
+  top: 52%;
+  left: 61%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_pertenencia_5 {
+  top: 51%;
+  left: 77%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_honestidad {
+  top: 61%;
+  left: 41%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_honestidad_2 {
+  top: 56%;
+  left: 51%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_honestidad_3 {
+  top: 52%;
+  left: 43%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_honestidad_4 {
+  top: 65%;
+  left: 51%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_honestidad_5 {
+  top: 70%;
+  left: 44%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_equidad {
+  top: 39.5%;
+  left: 48.5%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_equidad_2 {
+  top: 31%;
+  left: 50%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_equidad_3 {
+  top: 49%;
+  left: 56%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_equidad_4 {
+  top: 40%;
+  left: 42%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_equidad_5 {
+  top: 39%;
+  left: 60%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_dialogo {
+  top: 13%;
+  left: 55%;
+  width: 8%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+}
+
+.punto_dialogo_2 {
+  top: 10%;
+  left: 49%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_dialogo_3 {
+  top: 15%;
+  left: 66%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_dialogo_4 {
+  top: 5%;
+  left: 60%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_dialogo_5 {
+  top: 24%;
+  left: 58%;
+  width: 5%;
+  height: 5.5%;
+  -webkit-animation: pulse 1s linear 0s infinite alternate;
+  -moz-animation: pulse 1s linear 0s infinite alternate;
+  -o-animation: pulse 1s linear 0s infinite alternate;
+  animation: pulse 1s linear 0s infinite alternate;
+  cursor: pointer;
+  display: none;
+}
+
+.punto_dialogo:hover .campus_un_image_hover_dialogo {
+  display: inline;
+}
+
+.punto_dialogo:hover .campus_un_image {
+  display: none;
+}
+
+a.punto_solidaridad {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_responsabilidad {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_respeto {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_pertenencia {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_honestidad {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_equidad {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+a.punto_dialogo {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.sidenav .closebtn {
+  color: #afafaf;
+  border-color: #c5c5c5;
+}
+
+.linea_contenido_sidenav {
+  border-color: #dfdfdf;
+}
+
+.dialogop2,
+.dialogop3,
+.dialogo_3p2,
+.dialogo_4p2,
+.equidadp2,
+.equidadp3,
+.equidadp4,
+.equidad_2p2,
+.equidad_2p3,
+.equidad_3p2,
+.equidad_3p3,
+.equidad_4p2,
+.equidad_4p3,
+.honestidadp2,
+.honestidadp3,
+.honestidadp4,
+.honestidad_2p2,
+.honestidad_2p3,
+.honestidad_3p2,
+.honestidad_3p3,
+.honestidad_4p2,
+.honestidad_4p3,
+.pertenenciap2,
+.pertenenciap3,
+.pertenenciap4,
+.pertenencia_2p2,
+.pertenencia_2p3,
+.pertenencia_3p2,
+.pertenencia_3p3,
+.pertenencia_4p2,
+.pertenencia_4p3,
+.respetop2,
+.respetop3,
+.respeto_2p2,
+.respeto_2p3,
+.respeto_3p2,
+.respeto_3p3,
+.respeto_4p2,
+.respeto_4p3,
+.responsabilidadp2,
+.responsabilidadp3,
+.responsabilidadp4,
+.responsabilidad_2p2,
+.responsabilidad_2p3,
+.responsabilidad_3p2,
+.responsabilidad_3p3,
+.responsabilidad_4p2,
+.responsabilidad_4p3,
+.solidaridadp2,
+.solidaridadp3,
+.solidaridadp4,
+.solidaridad_2p2,
+.solidaridad_2p3,
+.solidaridad_3p2,
+.solidaridad_3p3,
+.solidaridad_4p2,
+.solidaridad_4p3,
+.semana_dialogo,
+.semana_equidad,
+.semana_honestidad,
+.semana_pertenencia,
+.semana_respeto,
+.semana_responsabilidad,
+.semana_solidaridad
+ {
+  display: none;
+}
+
+
+/*Solidaridad - Compromiso ético*/
+
+
+/*Fin Solidaridad - Compromiso ético*/
+
+
+/*Reponsabilidad - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #5b589b;
+}
+
+.button.light {
+    color: #5b589b;
+}
+
+.button.light:hover {
+    background-color: #5b589b;
+}
+
+*/
+
+.p_ruta_responsabilidad {
+  color: #5b589b;
+}
+
+
+/*Fin Responsabilidad - Compromiso ético*/
+
+
+/*Respeto - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #009cdb;
+}
+
+.button.light {
+    color: #009cdb;
+}
+
+.button.light:hover {
+    background-color: #009cdb;
+}
+
+*/
+
+.p_ruta_repeto {
+  color: #009cdb;
+}
+
+
+/*Fin Respeto - Compromiso ético*/
+
+
+/*pertenencia - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #e2b533;
+}
+
+.button.light {
+    color: #e2b533;
+}
+
+.button.light:hover {
+    background-color: #e2b533;
+}
+
+*/
+
+.p_ruta_pertenencia {
+  color: #e2b533;
+}
+
+
+/*Fin pertenencia - Compromiso ético*/
+
+
+/*Honestidad - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #599f9b;
+}
+
+.button.light {
+    color: #599f9b;
+}
+
+.button.light:hover {
+    background-color: #599f9b;
+}
+
+*/
+
+.p_ruta_honestidad {
+  color: #599f9b;
+}
+
+
+/*Fin Honestidad - Compromiso ético*/
+
+
+/*Equidad - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #d264a1;
+}
+
+.button.light {
+    color: #d264a1;
+}
+
+.button.light:hover {
+    background-color: #d264a1;
+}
+
+*/
+
+.p_ruta_equidad {
+  color: #d264a1;
+}
+
+
+/*Fin Equidad - Compromiso ético*/
+
+
+/*Diálogo - Compromiso ético*/
+
+
+/*
+.main-bg {
+    background: #ca3729;
+}
+
+.button.light {
+    color: #ca3729;
+}
+
+.button.light:hover {
+    background-color: #ca3729;
+}
+
+*/
+
+.p_ruta_dialogo {
+  color: #ca3729;
+}
+
+
+/*Fin Diálogo - Compromiso ético*/
+
+
+/*fin compromiso ético*/

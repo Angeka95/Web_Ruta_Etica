@@ -1,0 +1,370 @@
+
+/*Tablets*/ 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+		/*Semana de la etica*/
+
+		 .semana_etica{
+    	width: 100%;
+  		}
+
+
+  		.contenedor_semana{
+
+	  	margin-top: 15%;
+	  	margin-bottom: 15%
+  		}
+  		.semana_etica{
+  		width: 100%;
+  		}
+
+  		/*Fin Semana de la etica*/
+
+
+
+  		/*sidenav*/
+
+  		.sidenav_abierto{
+  		width: 80%;
+  		}
+  		/*Fin sidenav*/
+
+
+  		/*mapa y texto*/
+  		.contenedor_background_image{
+  		width: 100%;
+  		}
+
+  		.contenedor_text_img{
+  			display: flex;
+  			flex-wrap: wrap; 
+  		}
+  		/*Fin mapa y texto*/
+
+
+
+  	}
+
+/*Fin Tablets*/ 
+
+
+/*Phones*/ 
+
+@media (min-width: 220px) and (max-width: 768px) {
+
+		/*banner responsive*/
+
+		.banner{
+			flex-wrap: wrap;
+		}
+
+
+		.contenedor_txt_banner{
+		 width: 100%;
+		 padding-right: 0%;
+		 padding-bottom: 2%;
+		}
+
+		.contenedor_btn_banner{
+		padding-left: 0%;
+		}
+
+		.txt_banner{
+		text-align: center;
+		width: 100%;
+		}
+
+
+		.contenedor_btn_banner{
+		width:100%;
+		display: flex;
+		justify-content: center;
+
+		}
+		
+		.button.light{
+		text-align: center;
+		line-height: 18px;
+			}
+		
+
+		/*fin banner responsive*/
+
+
+
+		/*Logo Ruta etica*/
+		.contenedor_logos_responsive{
+			display:flex;
+	  		justify-content: center;
+			 width: 100%;
+	  		margin-top: 20px;
+	  		margin-bottom: 200px;
+			
+		}
+
+		.logo_valores_responsive{
+			width: 90%;
+		}
+
+
+		.contenedor_p_logo{
+			display: none;
+		}
+
+
+		.titulo_ruta{
+		font-size: 46px;
+   		line-height: 50px;
+  		letter-spacing: 16px;
+  		margin-top: 70px;
+		}
+
+		.contenedor_tit_logo{
+ 		 width: 100%;
+ 		 height: 250px;
+  
+		}
+
+		.linea_logo_bottom{
+			display: none;
+		}
+
+		.linea_logo_top{
+			display: none;
+		}
+
+		  .linea_logo_responsive{
+ 		  display: none;
+ 		  width: 320px;
+		  margin-top: 10px;
+		  margin-bottom: 25px;
+		  border-top: 1px;
+		  border-style: solid;
+		  border-color: grey;
+ 		}
+
+		/*fin logo ruta etica*/
+
+
+		/*Semana de la etica*/
+
+		 .semana_etica{
+    	width: 100%;
+  		}
+
+
+  		  .contenedor_semana{
+
+	  	margin-top: 15%;
+	  	margin-bottom: 15%
+  		}
+
+  		/*Fin Semana de la etica*/
+
+  		 /*sidenav*/
+
+  		 .sidenav_abierto{
+  		width: 90%;
+  		}
+  		/*Fin sidenav*/
+
+
+  		/*mapa y texto*/
+  		.contenedor_background_image{
+  		width: 100%;
+  		}
+
+  		.contenedor_text_img{
+  			display: flex;
+  			flex-wrap: wrap; 
+  		}
+  		/*Fin mapa y texto*/
+
+
+  			.cuadro_tip {
+  			min-width: 60%;
+	  		width: 300px;
+			}
+		/*zoom*/
+			.cuadro_zoom {
+			min-width: 60%;
+			  width: 300px;
+			  margin-top: 20px;
+			  display: inline;
+
+			}
+			.contenedor_zoom{
+			  width:100%;
+			  display:flex;
+			  justify-content: center;
+			}
+			.zoom_phone{
+			  width:20%;
+			}
+			/*fin zoom*/
+
+
+
+		/*Iconos*/
+		.punto_dialogo_1{
+		width: 6%;
+		}
+		.punto_dialogo_2{
+		width: 6%;
+		}
+		.punto_dialogo_3{
+		width: 6%;
+		}
+		.punto_dialogo_4{
+		width: 6%;
+		}
+		.punto_dialogo_5{
+		width: 6%;
+		}
+		.punto_solidaridad_1{
+		width: 6%;
+		}
+		.punto_solidaridad_2{
+		width: 6%;
+		}
+		.punto_solidaridad_3{
+		width: 6%;
+		}
+		.punto_solidaridad_4{
+		width: 6%;
+		}
+		.punto_solidaridad_5{
+		width: 6%;
+		}
+
+		.punto_respeto_1{
+		width: 6%;
+		}
+		.punto_respeto_2{
+		width: 6%;
+		}
+		.punto_respeto_3{
+		width: 6%;
+		}
+		.punto_respeto_4{
+		width: 6%;
+		}
+		.punto_respeto_5{
+		width: 6%;
+		}
+		.punto_responsabilidad_1{
+		width: 6%;
+		}
+		.punto_responsabilidad_2{
+		width: 6%;
+		}
+		.punto_responsabilidad_3{
+		width: 6%;
+		}
+		.punto_responsabilidad_4{
+		width: 6%;
+		}
+		.punto_responsabilidad_5{
+		width: 6%;
+		}
+		.punto_pertenencia_1{
+		width: 6%;
+		}
+		.punto_pertenencia_2{
+		width: 6%;
+		}
+		.punto_pertenencia_3{
+		width: 6%;
+		}
+		.punto_pertenencia_4{
+		width: 6%;
+		}
+		.punto_pertenencia_5{
+		width: 6%;
+		}
+		.punto_equidad_1{
+		width: 6%;
+		}
+		.punto_equidad_2{
+		width: 6%;
+		}
+		.punto_equidad_3{
+		width: 6%;
+		}
+		.punto_equidad_4{
+		width: 6%;
+		}
+		.punto_equidad_5{
+		width: 6%;
+		}
+		.punto_honestidad_1{
+		width: 6%;
+		}
+		.punto_honestidad_2{
+		width: 6%;
+		}
+		.punto_honestidad_3{
+		width: 6%;
+		}
+		.punto_honestidad_4{
+		width: 6%;
+		}
+		.punto_honestidad_5{
+		width: 6%;
+		}
+
+		/*Modal*/
+		
+		.modal_texto {
+		  max-width: 85%;
+		  
+		}
+
+		.tit_intro_text {
+    	font-size: 60px;
+    	}
+
+
+		.sub_intro_text {
+    	font-size: 22px;
+    	line-height: 26px;
+    	}
+
+
+    	.logo_valores{
+  		width: 100%;
+			}
+
+		.sub_intro_text2 {
+    	font-size: 22px;
+    	}
+
+    	.intro_text {
+    	font-size: 14px;
+    	line-height: 18px;}
+
+    /*Fin Modal*/
+
+
+
+
+
+
+
+
+	/*Fin mapa y texto*/
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ /*Fin - Sidenav Actividad*/ 
+
+
+
+ /*Fin Phones*/

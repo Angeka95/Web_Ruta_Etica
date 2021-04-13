@@ -1,0 +1,588 @@
+/*loader*/
+
+#ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000; }
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#ftco-loader.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1; }
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round; }
+
+@-webkit-keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px; } }
+
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px; } }
+
+/*end loader*/
+#letrasdfa2 {
+   color: #fff;
+    font-family: 'Ancizar sans';
+    font-style: normal;
+    padding: 10px 5% 10px 0px;
+    text-align: right;
+    background: #94b43b;
+}
+.tx-unal-accesibilidad {
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+}
+main.detalle {
+    margin: 0 0 0 0;
+    z-index: 0;
+}
+
+
+
+
+.logo_ruta_etica {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.linea_logo_top {
+  width: 720px;
+  margin-top: 40px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: grey;
+  margin-bottom: -20px;
+}
+.contenedor_tit_logo {
+  width: 100%;
+  height: 110px;
+}
+
+.titulo_ruta {
+  font-size: 57px;
+  letter-spacing: 20px;
+  color: grey;
+  font-family: Ancizar Sans;
+  text-align: center;
+  padding-left: 12px;
+}
+
+.linea_logo_responsive {
+  display: none;
+}
+
+.contenedor_p_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.p_logo_ruta {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: grey;
+  padding-right: 4px;
+  padding-left: 4px;
+  line-height: 20px;
+}
+.p_ruta_dialogo {
+  color: #ca3729;
+}
+
+.p_ruta_responsabilidad {
+  color: #5b589b;
+}
+.p_ruta_repeto {
+  color: #009cdb;
+}
+.p_ruta_pertenencia {
+  color: #e2b533;
+}
+.p_ruta_honestidad {
+  color: #599f9b;
+}
+.p_ruta_equidad {
+  color: #d264a1;
+}
+.p_ruta_solidaridad {
+  color: #ca3729;
+}
+
+.linea_logo_bottom {
+  width: 720px;
+  margin-top: 20px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: grey;
+}
+
+.contenedor_cabezote{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+
+.linea_premiacion{
+  border: solid 1px grey;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Titulo_premiacion{
+
+  font-size: 60px;
+  line-height: 58px;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  color: #575756;
+  margin-bottom: 5px;
+  width: 100%;
+  
+  }
+
+.Subtitulo_premiacion{
+  width: 100%;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  color: #575756;
+  margin-bottom: 15px;
+  
+  }
+
+.link_premiacion{
+  width: 100%;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  color: #575756;
+  margin-bottom: 36px;
+}
+
+.premios_participantes{
+  text-align: center;
+  width: 60%;
+
+}
+
+.premio_mayor{
+  text-align: center;
+  width: 100%;
+  padding: 5% 20% 5% 20%;
+  margin-top: 50px;
+  background-color: #A4C956;
+}
+
+.subtitulo_mayor{
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #fff;
+}
+
+.parrafo_mayor{
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: left;
+  
+}
+
+
+
+
+.contenedor_general{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+
+.contenedor_insignia{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.insignia{
+  width: 60%;
+  align-self: center;
+}
+
+
+
+.contenedor_premiacion{
+  display: flex;
+  justify-content: left;
+  border-left: solid 2px grey;
+  height: auto;
+  padding: 0.1%;
+  width: 65%;
+}
+
+
+.contenedor_texto{
+  margin-left: 5%;
+}
+
+.subtitulo_premiacion{
+  font-size: 23px;
+  font-weight: 900;
+ 
+  line-height: 30px;
+  color: #575756;
+}
+
+
+.parrafo_premiacion{
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+  color: #575756;
+  text-align: left;
+  
+}
+
+.destacado_parrafo{
+  font-weight: 900;
+}
+
+.linea_horizontal{
+  display:none;
+}
+
+.contenedor_bullet{
+  width: 10%;
+}
+
+.icon_bullet{
+  width: 20px;
+  float:left;
+  margin-right: 3%;
+}
+
+
+.borde_dialogo{
+  border-left: solid 2px #CA3829;
+}
+
+
+.borde_equidad{
+   border-left: solid 2px #D265A1;
+}
+
+.borde_honestidad{
+   border-left: solid 2px #599F9B;
+}
+
+.borde_pertenencia{
+   border-left: solid 2px #e2b533;
+}
+
+.borde_respeto{
+   border-left: solid 2px #009cdb;
+}
+
+.borde_responsabilidad{
+   border-left: solid 2px #5b589b;
+}
+
+.borde_solidaridad{
+   border-left: solid 2px #CA3829;
+}
+
+
+.general_color{
+  color: #A4C956;
+}
+.dialogo_color{
+  color: #CA3829;
+}
+
+.equidad_color{
+  color: #D265A1;
+}
+
+.honestidad_color{
+  color: #599F9B;
+}
+
+.pertenencia_color{
+  color: #e2b533;
+}
+
+.respeto_color{
+  color: #009cdb;
+}
+.responsabilidad_color{
+  color: #5b589b;
+}
+.solidaridad_color{
+  color: #CA3829;
+}
+
+.contenedor_cierre{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.contenedor_logos{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+.logos{
+  width:50%;
+  margin-top: 50px
+}
+
+.logo_somos{
+   width:20%;
+  margin-top: 50px
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .contenedor_general{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor_insignia{
+      width:40%;
+      margin-bottom: 10px;
+    }
+
+    .insignia{
+      width: 60%;
+      margin-bottom: 10%;
+    }
+
+    .contenedor_premiacion{
+      width:90%;
+      border-left: solid 0px #d4d4d4;
+      /*height: 17%;*/
+      padding: 1%;
+    }
+    .subtitulo_premiacion{
+      border-top: 1.5px solid #d4d4d4;
+      border-top-width: 100%; 
+      border-bottom: 1.5px solid #d4d4d4;
+      border-bottom-width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+
+}
+
+
+@media (min-width: 220px) and (max-width: 768px) {
+    .contenedor_p_logo{
+      display: none;
+    }
+
+          .titulo_ruta{
+    font-size: 66px;
+      line-height: 66px;
+      letter-spacing: 16px;
+    }
+
+    .contenedor_tit_logo{
+     width: 100%;
+     height: 150px;
+  
+    }
+
+
+
+    .linea_logo_bottom{
+      display: none;
+    }
+
+    .linea_logo_top{
+      display: none;
+    }
+
+      .premio_mayor{
+      width: 100%;
+      padding: 15% 10% 15% 10%;
+      }
+      .premios_participantes{
+      width: 80%;
+
+
+      }
+
+    .logos{
+     width:90%;
+    }
+
+    .logo_somos{
+      width: 50%;
+    }
+
+      .contenedor_insignia{
+      width:40%;
+      margin-bottom: 10px;
+    }
+
+    .insignia{
+      width: 90%;
+      margin-bottom: 10%;
+    }
+
+    .contenedor_premiacion{
+      width:90%;
+      border-left: solid 0px #d4d4d4;
+      /*height: 17%;*/
+      padding: 1%;
+    }
+
+    .contenedor_general{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .subtitulo_premiacion{
+      border-top: 1.5px solid #d4d4d4;
+      border-top-width: 100%; 
+      border-bottom: 1.5px solid #d4d4d4;
+      border-bottom-width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+
+/*Logo Ruta etica*/
+
+    .titulo_ruta{
+    font-size: 66px;
+      line-height: 66px;
+      letter-spacing: 16px;
+    }
+
+    .contenedor_tit_logo{
+     width: 100%;
+     height: 150px;
+  
+    }
+
+    .linea_logo_bottom{
+      display: none;
+    }
+
+    .linea_logo_top{
+      display: none;
+    }
+
+      .linea_logo_responsive{
+      display: none;
+      width: 320px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      border-top: 1px;
+      border-style: solid;
+      border-color: grey;
+    }
+
+    /*fin logo ruta etica*/
+
+
+}
